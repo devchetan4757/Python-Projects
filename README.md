@@ -1,4 +1,4 @@
-# 🔍 Advanced Phishing URL Analyzer  
+Phishing URL Analyzer  
 A powerful Python-based phishing detection tool that analyzes URLs using multiple layers of security checks such as heuristics, DNS validation, redirect scanning, HTML inspection, and fake login page detection.
 
 ---
