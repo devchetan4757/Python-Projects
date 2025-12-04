@@ -1,26 +1,39 @@
-# 🔍 Advanced Phishing URL Analyzer  
-A powerful Python-based phishing detection tool that analyzes URLs using multiple layers of security checks such as heuristics, DNS validation, redirect scanning, HTML inspection, and fake login page detection.
+🔎 Advanced Phishing URL Analyzer
+
+A standalone Python tool that analyzes URLs for phishing indicators using multiple layers of detection:
+
+✅ URL structure analysis
+
+✅ Network checks (DNS, redirects, HTTP response)
+
+✅ HTML & JavaScript analysis (fake login page detection)
+
+✅ Environment anti–evasion checks (VM/debugger detection)
+
+✅ Weighted scoring system & clear risk verdict
+
+🚀 Usage
+
+1. Install Dependencies
+
+pip install requests beautifulsoup4 lxml tldextract psutil
+
 
 ---
 
-## 🚀 Features
+2. Run the Script
 
-### ✅ **1. URL Heuristic Analysis**
-- Detects misleading or obfuscated characters  
-- Flags suspicious keywords (`login`, `verify`, `secure`)  
-- Detects @ redirect tricks  
-- Flags excessively long URLs  
-- Warns if the URL is an IP address  
+python analyzer.py
+
+Replace "analyzer.py" with your script file name.
+
 
 ---
 
-### 🔐 **2. Network & Domain Safety Checks**
-- DNS resolution validation  
-- HTTP request + redirection depth analysis  
-- Auto-identifies unstable or unreachable domains  
+3. Example Usage in Python
 
----
+from analyzer import run_url_analysis
 
-### 🧪 **3. Fake Login Page / Form Detection**
-- Extracts and analyzes HTML forms  
-- Flags credential fields (`
+result = run_url_analysis("https://example.com/login")
+print(result)
+
