@@ -1,4 +1,4 @@
-🔎 Advanced Phishing URL Analyzer
+🔎 Phishing URL Analyzer
 
 A standalone Python tool that analyzes URLs for phishing indicators using multiple layers of detection:
 
