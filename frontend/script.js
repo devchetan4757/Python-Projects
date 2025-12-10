@@ -95,3 +95,17 @@ function formatList(arr) {
     }
     return "<ul>" + arr.map(item => `<li>${item}</li>`).join("") + "</ul>";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const pasteBtn = document.querySelector(".fa-copy");
+  const input = document.getElementById("url-input");
+
+  pasteBtn.addEventListener("click", async () => {
+    try {
+      const text = await navigator.clipboard.readText();
+      input.value = text;
+    } catch (err) {
+      alert("Unable to paste. Give clipboard permission.");
+    }
+  });
+});
