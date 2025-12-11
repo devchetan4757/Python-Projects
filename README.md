@@ -30,7 +30,7 @@
 #⭐ 0–5 Risk Score System
 The scanner assigns a clean and easy-to-understand rating:
 
- Score = 0 
+ Score = 0                         |
  Meaning = Safe 🟢
  Description = Legit, clean, no red flags 
  
@@ -41,13 +41,13 @@ The scanner assigns a clean and easy-to-understand rating:
 
 
  score = 3
- meaning  = Suspicious 
+ meaning  = Suspicious 🟠
  description = Multiple indicators of phishing/malware 
 
 
 
  score = 4-5 
- meaning = Dangerous 
+ meaning = Dangerous 🔴
  description = Strong phishing or malware signs   
  detected 
 
