@@ -1,0 +1,203 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+    img{
+        height: 60px;
+        width: 80px;
+        transform: translate(-220px,66px);
+        border-radius: 10px
+    }
+        .titleBar {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            border-bottom: #FFFFFF solid 2px;
+        }
+        .titleBar h1 {
+            margin: 0;
+            margin-left: 300px;
+            font-size: 3.5em;
+            letter-spacing: 10px;
+        }
+        #menu {
+            font-size: 30px;
+            position: fixed;
+            top: 90px;
+            left: 80px;
+            padding: 20px;
+            border: thin black 4px;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #FFFFFF;
+        }
+  
+.threeLines{
+  height: 100vh;
+  width: 17%;
+  font-size: 30px;
+  z-index: 1;
+  position: absolute ;
+  background: #2C3E50;
+  opacity: 0;
+transform: translateY(-10px);
+pointer-events: none;
+transition: opacity 0.3s ease,
+transform 0.3s ease;
+}
+
+.threeLines.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+a{
+  color: white;
+font-size: 25px;
+text-align: center;
+text-decoration: none;
+display: block;
+height: 50px;
+margin-top: 24px;
+border-radius: 5px;
+border-right: none;
+padding-top: 8px;
+}
+#home{
+  background: white;
+  color: black;
+  margin-right: -1px;
+  margin-left: 40px;
+}
+.fa-history{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  left: 5vw;
+  top: 3.1vh;
+}
+
+.input-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.input-container input {
+    width: 50%;
+    padding: 20px;
+    font-size: 1em;
+    margin-left: 180px;
+    border: 1px solid #d1d5db;     
+    border-radius: 10px;
+    background: #ffffff;      
+    color: #111827;
+
+    transition: border-color .15s ease, 
+                box-shadow .15s ease;
+    outline: none;
+}
+
+.input-container input::placeholder {
+    color: #9ca3af;
+}
+
+.input-container input:focus-visible {
+    border-color: #6366f1;        
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.25);
+}
+
+  .fa-copy{
+     font-size: 29px;
+     margin: 7px;
+     color: #2C3E50;
+   }     
+  .fa-copy:active{
+    color: #7300FF;
+    
+  }
+.input-container button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            transform: translate(-600px,80px);
+            margin-bottom: 90px;
+            margin-left: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #3498DB;
+            color: white;
+            border-radius: 5px;
+        }
+        #score-container, #views-container {
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #score-container {
+            background: #ECF0F1;
+        }
+  .info-box{
+    padding: 20px;
+    border: 1px black solid;
+  }
+.field-box {
+    background: #ffffff;
+    padding: 15px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.field-box h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.field-box ul {
+    margin: 5px 0 0 20px;
+}
+
+.field-box {
+    background: #ffffff;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.risk-box {
+    margin-top: 15px;
+    padding: 18px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+/* LOW RISK = GREEN */
+.risk-box.low {
+    background: #2ecc71;
+}
+
+/* MINIMAL RISK = ORANGE */
+.risk-box.minimal {
+    background: #f39c12;
+}
+
+/* RISKY = RED */
+.risk-box.risky {
+    background: #e74c3c;
+}
+
+.empty {
+    color: #777;
+    font-style: italic;
+}

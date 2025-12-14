@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Analyzer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/home-page/style.css">
+</head>
+<body>
+  
+    <div class="titleBar">
+        <div id="logo"><img src="../assets/logo.jpeg" alt=""></div>
+        <h1>URL ANALYZER</h1>
+    </div>
+
+    <div id="menu">&#9776;</div>
+    <div class="threeLines">
+   
+    <a id="home" href="index.html">Home</a>
+    <a id="history" href="../history-page/history.html">History</a>
+    </div>
+    <div class="input-container">
+        <input type="text" placeholder="Paste URL here..." id="url-input">
+        <i class="fa-solid fa-copy"></i> 
+        <button onclick="startAnalysis()">Start Analyze</button>
+    </div>
+
+    <div id="score-container">
+        <h2>Score:</h2>
+        <p id="score">-</p>
+    </div>
+
+    <div id="views-container">
+        <h2>Depth:</h2>
+        <div id='views'></div>
+    </div>
+
+<script src="/home-page/script.js"></script>
+</body>
+</html>

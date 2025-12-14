@@ -1,0 +1,31 @@
+{
+  "name": "phishing-url-backend",
+  "version": "1.0.0",
+  "description": "Backend API for phishing URL scanner (Node.js + Python bridge)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "phishing",
+    "security",
+    "python",
+    "express",
+    "backend",
+    "url-scanner"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
+    "mongoose": "^9.0.1",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
